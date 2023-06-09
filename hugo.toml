@@ -1,0 +1,96 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Leyang Pan"
+
+paginate = 5
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+    env = "production" # to enable google analytics, opengraph, twitter-cards and schema.
+    title = "LeyangPan"
+    description = "This is the website of Leyang Pan, a third year Computer Engineering student from UBC"
+    keywords = ["Blog", "Portfolio", "Computer Engineering"]
+    author = "Leyang Pan"
+    # author = ["Me", "You"] # multiple authors
+    #images = ["<link or path of image for opengraph, twitter-cards>"]
+    DateFormat = "January 2, 2006"
+    defaultTheme = "auto" # dark, light
+    disableThemeToggle = false
+
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = false
+    disableSpecial1stPost = false
+    disableScrollToTop = false
+    comments = false
+    hidemeta = false
+    hideSummary = false
+    showtoc = false
+    tocopen = false
+
+    [params.label]
+    text = "Leyang Pan"
+    icon = "image/coding.png"
+    iconHeight = 35
+
+    [params.profileMode]
+    enabled = true # needs to be explicitly set
+    title = "Welcome! \U0001F44B"
+    subtitle = "This is the website of **Leyang Pan**, a third year **Computer Engineering** student from UBC."
+    imageUrl = "image/profile_pic.jpg"
+    imageWidth = 125
+    imageHeight = 150
+    imageTitle = "Leyang Pan"
+
+        [[params.profileMode.buttons]]
+        name = "Blogs"
+        url = "blogs"
+        [[params.profileMode.buttons]]
+        name = "Projects"
+        url = "projects"
+
+
+
+    [params.homeInfoParams]
+    Title = "Welcome! \U0001F44B"
+    Content = "This is the website of **Leyang Pan**, a third year **Computer Engineering** student from UBC."
+
+        [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/leyang-pan-cpen"
+        [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/YuanSu526"
+        [[params.socialIcons]]
+        name = "instagram"
+        url = "https://www.instagram.com/leyangpan526/"
+        [[params.socialIcons]]
+        name = "youtube"
+        url = "https://www.youtube.com/@yangpan5542"
+
+
+[menus]
+    [[menus.main]]
+        identifier = "about"
+        name = "About"
+        weight = 1
+        url = "/about/"
+
+    [[menus.main]]
+        identifier = "blogs"
+        name = "Blogs"
+        weight = 2
+        url = "/blogs/"
+
+    [[menus.main]]
+        identifier = "projects"
+        name = "Projects"
+        weight = 3
+        url = "/projects/"
